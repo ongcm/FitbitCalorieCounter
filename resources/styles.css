@@ -1,0 +1,55 @@
+.defaultText {
+  font-size: 32;
+  font-family: System-Regular;
+  font-weight: regular;
+}
+
+.application-fill           { fill: greenyellow; }
+.foreground-fill            { fill: fb-white; }
+.background-fill            { fill: fb-black; }
+
+#button-1 #text {
+  text-buffer: "VIEW";
+}
+
+#button-2 #text {
+  text-buffer: "ADD";
+}
+
+#numCalories {
+  width: 100%;
+  fill: black;
+}
+
+#numCaloriesLabel{
+  fill: black;
+  width: 100%;
+}
+
+#numCalories #text {
+  text-buffer: "100";
+  font-size: 100;
+  fill: greenyellow;
+}
+
+#numCaloriesLabel #text{
+  text-buffer: "Calories Consumed";
+  fill: greenyellow;
+}
+
+#backButton{
+  width: 100%;
+}
+
+#backButton #text {
+  text-buffer: "Go Back";
+  font-size: 35;
+}
+
+.list-separator {
+  x: 0;
+  y: 100%-2;
+  width: 100%;
+  height: 2;
+  fill: fb-extra-dark-gray;
+ }

@@ -1,0 +1,65 @@
+<svg>
+<svg id="addCaloriesSvg">
+  <rect id="background" />
+  <use id="button-1" href="#text-button" class="text-button bottom left secondary application-fill" />
+  <use id="button-2" href="#text-button" class="text-button bottom right application-fill" />
+  <use href="#text-button" id="numCalories" class="text-button bottom secondary application-fill" y="25%" />
+ <use href="#dynamic-textarea" class="p2 application-fill secondary" y="50%" x="18%">
+      <set href="#text" attributeName="text-buffer" to="Calories Consumed" />
+    </use> 
+</svg>
+<svg id="viewCaloriesSvg" display="none" width="100%" height="100%">
+  <symbol id='colour-item' href='#tile-list-item' height='50' display='none'>
+    <g id='transform'>
+      <rect id='bg' height='100%' width='100%' />
+      <text id='title-text' fill='white' y='35' x='5' text-length="100"></text>
+
+      <!-- Visual separator between tiles -->
+      <rect id='tile-divider-bottom' class='list-separator' />
+    </g>
+  </symbol>
+  
+  <symbol id='separate-item' href='#tile-list-item' height='5' display='none'>
+    <rect id='bg' height='100%' width='100%' fill='black' />
+    <rect id='tile-divider-bottom' class='list-separator' />
+  </symbol>
+
+  <use id='my-tile-list' href='#tile-list'>
+    <!-- We need to mark this as a VirtualTileList -->
+    <var id='virtual' value='1' />
+    
+    <var id='separator-height-bottom' value='2'/>
+
+    <use id='colour-pool' href='#tile-list-pool'>
+      <use id='colour-pool[1]' href='#colour-item' />
+      <use id='colour-pool[2]' href='#colour-item' />
+      <use id='colour-pool[3]' href='#colour-item' />
+      <use id='colour-pool[4]' href='#colour-item' />
+      <use id='colour-pool[5]' href='#colour-item' />
+      <use id='colour-pool[6]' href='#colour-item' />
+      <use id='colour-pool[7]' href='#colour-item' />
+      <use id='colour-pool[8]' href='#colour-item' />
+      <use id='colour-pool[9]' href='#colour-item' />
+      <use id='colour-pool[10]' href='#colour-item' />
+      <use id='colour-pool[11]' href='#colour-item' />
+      <use id='colour-pool[12]' href='#colour-item' />
+      <use id='colour-pool[13]' href='#colour-item' />
+    </use>
+    
+    <use id='separate-pool' href='#tile-list-pool'>
+      <use id='separate-pool[1]' href='#separate-item' />
+      <use id='separate-pool[2]' href='#separate-item' />
+      <use id='separate-pool[3]' href='#separate-item' />
+      <use id='separate-pool[4]' href='#separate-item' />
+      <use id='separate-pool[5]' href='#separate-item' />
+      <use id='separate-pool[6]' href='#separate-item' />
+      <use id='separate-pool[7]' href='#separate-item' />
+      <use id='separate-pool[8]' href='#separate-item' />
+      <use id='separate-pool[9]' href='#separate-item' />
+      <use id='separate-pool[10]' href='#separate-item' />
+    </use>
+
+  </use>
+  <use href="#text-button" id="backButton" class="text-button bottom secondary application-fill"/>
+</svg>
+</svg>

@@ -1,0 +1,41 @@
+[send][5] {
+  "id": 0,
+  "method": "initialize",
+  "params": {
+    "userAgent": "fdb-debugger/1.7.3",
+    "capabilities": {
+      "protocol": {
+        "maxMessageSize": 1048576
+      },
+      "console": {
+        "appLogging": true
+      },
+      "io": {
+        "write": true
+      }
+    }
+  },
+  "jsonrpc": "2.0"
+}
+[recv][111] {
+  "result": {
+    "capabilities": {
+      "appHost": {
+        "install": {
+          "sideloadStream": true,
+          "companionBundle": true,
+          "companionCompatibility": {
+            "maxAPIVersion": "3.5.0"
+          }
+        }
+      },
+      "io": {
+        "write": true
+      }
+    },
+    "device": "Android 3.89 (38951001) RELEASE release",
+    "hostKind": "companion"
+  },
+  "id": 0,
+  "jsonrpc": "2.0"
+}
